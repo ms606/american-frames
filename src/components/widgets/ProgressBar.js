@@ -17,7 +17,7 @@ const LoadingLabel = styled.div`
 const LoaderContainer = styled.div`
   height: 10px;
   // width: 600px;
-  width: 76vw;
+  width: 30vw;
   // height: 80vh;
   border-radius: 4px;
   background-color: #dbe2e6;
@@ -49,7 +49,7 @@ const LoadingPercentageandIconContainer = styled.div`
 const LoaderFill = styled.div`
   height: 100%;
   border-radius: 4px;
-  margin: 7px 0px;
+  margin: 2px 0px;
   width: ${({ completed }) => completed && `${completed}%`};
   background-color: #008556;
   border-radius: "inherit";

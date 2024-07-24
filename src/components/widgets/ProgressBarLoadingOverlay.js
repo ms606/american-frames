@@ -16,9 +16,8 @@ const ProgressBarLoadingBackground = styled.div`
 `;
 
 const ProgressBarLoadingContainer = styled.div`
-  width: 60vw;
-  height: 8vh;
-  padding: 10px;
+  width: 35vw;
+  height: 10vh;
   display: inline-flex;
   padding: 48px 24px;
   flex-direction: column;
@@ -62,4 +61,4 @@ const ProgressBarLoadingOverlay = () => {
   );
 };
 
-export default ProgressBarLoadingOverlay;
+export default ProgressBarLoadingOverlay

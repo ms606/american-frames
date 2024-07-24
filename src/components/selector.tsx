@@ -155,10 +155,17 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
     groups.splice(indexToRemove, 1);
   }
 
-  const hasEnabled = groups[4]?.attributes.some(attribute => attribute.enabled);
+  const hasEnabled = groups[3]?.attributes.some(attribute => attribute.enabled);
   
   if (!hasEnabled) {
-    groups.splice(4, 1);
+    groups.splice(3, 1);
+  }
+
+
+  const hasEnabled2 = groups[2]?.attributes.some(attribute => attribute.enabled);
+  
+  if (!hasEnabled2) {
+    groups.splice(2, 1);
   }
 
   useEffect(() => {
@@ -255,7 +262,7 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
 
   if (isAssetsLoading || !groups || groups.length === 0) return <Loader />;
 
-  console.log(groups[1],groups);
+  console.log(groups);
   
   // groups
   // -- attributes
@@ -758,7 +765,7 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
 
                   
                   <div>
-                  <List>
+                  {/* <List>
                     {selectedGroup &&
                       selectedGroup.attributes &&
                       // selectedGroup.attributes?.name =! 'Shelter Colors' &&
@@ -797,7 +804,7 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
                           return null;
                         }
                       })}
-                  </List>
+                  </List> */}
                 </div>
                   
                 </div>
