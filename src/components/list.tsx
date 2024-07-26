@@ -212,11 +212,11 @@ export const ListItemColor = styled.li<{ selected?: boolean, selectedColor?: any
 
  
  export const ListItemImage = styled.img<{ selected?: any }>`
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     margin: 0px 11px;
-    border-radius: 100%;
+    // border-radius: 100%;
     border: 1px solid rgb(168 161 161);
     
     @media screen and (max-width: 568px) {
@@ -248,7 +248,7 @@ export const ListItemImageNoCarousel = styled.img<{ selected?: any }>`
     height: 40px;
     object-fit: contain;
     margin: 0px 11px;
-    border-radius: 100%;
+    // border-radius: 100%;
     border: 1px solid rgb(168 161 161);
     
     @media screen and (max-width: 568px) {

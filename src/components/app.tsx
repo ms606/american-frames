@@ -126,7 +126,8 @@ const App: FunctionComponent<{}> = () => {
 
               <div style={{
                   background: `url(../../American-Frame-Background.png) center center no-repeat`,
-                  backgroundSize: `cover`,
+                  // backgroundSize: `cover`,
+                  backgroundSize: '100% auto',
                   filter:  `grayscale(100%)`,
                   opacity: '0.1',
                   position: 'absolute', // Add this for positioning

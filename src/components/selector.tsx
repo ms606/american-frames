@@ -497,7 +497,7 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
           <label>Frame Type</label>
           <select name="frame-names" id="frame-names">     
               <option value="carving-wood">Carving Wood</option>
-              <option value="white-wood">White</option>
+              <option value="white-wood">White Wood</option>
           </select>
           </div> : ''
         }
