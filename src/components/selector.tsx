@@ -419,6 +419,7 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
               selectTrayPreviewOpenButton={selectTrayPreviewOpenButton}
             /> */}
 
+
             <div
               style={{
                 display: "flex",
@@ -491,6 +492,15 @@ const Selector: FunctionComponent<TrayPreviewOpenButton3DProps> = ({
                 }} selected={selectedGroup === group}> {group.id === -1 ? 'Other' : group.name}</ListItem>;
             })}
         </List> */}
+
+        {currentIndex === 0 ? <div className="frame-selection">
+          <label>Frame Type</label>
+          <select name="frame-names" id="frame-names">     
+              <option value="carving-wood">Carving Wood</option>
+              <option value="white-wood">White</option>
+          </select>
+          </div> : ''
+        }
 
           <div className={`animate-wrapper${isTrayOpen ? "-2 show" : ""}`}>
             {isTrayOpen && !selectedTrayPreviewOpenButton && (

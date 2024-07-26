@@ -123,6 +123,21 @@ const App: FunctionComponent<{}> = () => {
                   backgroundColor: "rgb(249 246 248)",
                 }}
               >
+
+              <div style={{
+                  background: `url(../../American-Frame-Background.png) center center no-repeat`,
+                  backgroundSize: `cover`,
+                  filter:  `grayscale(100%)`,
+                  opacity: '0.1',
+                  position: 'absolute', // Add this for positioning
+                  top: '0',
+                  left: '0',
+                  width: '100%',
+                  height: '70%',
+                }}>
+
+                </div>
+
                 <div
                   className="ThreeDRenderer"
                   style={
